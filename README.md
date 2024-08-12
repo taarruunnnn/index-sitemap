@@ -1,4 +1,3 @@
-```
 # Sitemap URL Indexing Automation
 
 This Python script automates the process of fetching URLs from sitemaps, submitting them to the Google Indexing API, and keeping track of the processed URLs. It provides a user-friendly interface for entering sitemap links, selecting the Google credentials JSON file, and checking the status of random URLs.
@@ -26,39 +25,34 @@ Before running the script, ensure that you have the following:
 
 1. Clone the repository:
 
-   ```
-   git clone https://github.com/taarruunnnn/index-sitemap.git
-   ```
+git clone https://github.com/your-username/sitemap-url-indexing.git
+
 
 2. Navigate to the project directory:
 
-   ```
-   cd sitemap-url-indexing
-   ```
+cd sitemap-url-indexing
+
 
 3. Install the required libraries:
 
-   ```
-   pip install -r requirements.txt
-   ```
+pip install -r requirements.txt
 
-   Alternatively, you can install the libraries individually using:
 
-   ```
-   pip install requests beautifulsoup4 pandas google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client openpyxl tkinter
-   ```
+Alternatively, you can install the libraries individually using:
+
+pip install requests beautifulsoup4 pandas google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client openpyxl tkinter
+
 
 ## Usage
 
 1. Run the script:
 
-   ```
-   python sitemap_indexing.py
-   ```
+python sitemap_indexing.py
+
 
 2. Follow the prompts to select the sitemap input method:
-   - Option 1: Enter a single sitemap link
-   - Option 2: Enter multiple sitemap links separated by commas
+- Option 1: Enter a single sitemap link
+- Option 2: Enter multiple sitemap links separated by commas
 
 3. If you selected option 2, enter the sitemap links when prompted, separated by commas.
 
@@ -72,14 +66,14 @@ Before running the script, ensure that you have the following:
 
 8. Once the processing is complete, a summary will be displayed in the terminal, showing the total URLs processed, successful submissions, failed submissions, the location of the saved Excel file, the current API quota, and the next available API usage time.
 
+## Handling API Rate Limits
+
+If you encounter API rate limits or quota exceeded errors, consider the following strategies:
+
+- Implement exponential backoff to gradually increase the delay between requests when rate limits are hit.
+- Monitor your API usage and quota to avoid exceeding the limits.
+- Contact the API provider for options to increase your quota or rate limits if necessary.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-- [Requests](https://docs.python-requests.org/) - HTTP library for making requests to sitemaps and APIs
-- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Library for parsing XML and extracting URLs from sitemaps
-- [pandas](https://pandas.pydata.org/) - Data manipulation library for handling and exporting data to Excel
-- [Google API Client](https://github.com/googleapis/google-api-python-client) - Google API client library for Python
-```
