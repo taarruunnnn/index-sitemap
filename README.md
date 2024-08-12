@@ -27,7 +27,7 @@ Before running the script, ensure that you have the following:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/sitemap-url-indexing.git
+   git clone https://github.com/taarruunnnn/index-sitemap.git
    ```
 
 2. Navigate to the project directory:
